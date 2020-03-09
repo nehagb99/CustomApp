@@ -20,9 +20,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Timer: "
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <Chronometer
+        android:id="@+id/simpleChronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/timer"
+        app:layout_constraintTop_toBottomOf="@+id/title"/>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: "
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title" />
+        app:layout_constraintTop_toBottomOf="@+id/timer" />
 
     <TextView
         android:id="@+id/question"
@@ -31,6 +47,28 @@
         android:text=""
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/timer" />
+        app:layout_constraintTop_toBottomOf="@+id/score" />
+
+    <EditText
+        app:layout_constraintTop_toBottomOf="@+id/question"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/responseEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Type one word answer here" />
+
+    <Button
+        android:id="@+id/clickButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="#318214"
+        android:textAllCaps="true"
+        app:layout_constraintTop_toBottomOf="@+id/responseEditText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="onClick2"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
