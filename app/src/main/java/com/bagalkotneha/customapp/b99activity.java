@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Chronometer;
 import android.widget.EditText;
@@ -41,8 +42,21 @@ public class b99activity extends AppCompatActivity {
     }
     public void onClick2(View view) {
         String ans = responseText.getText().toString();
-        if (ans == answers[count]) {
+        Log.i("testMessage", ans);
+        Log.i("2message", answers[count]);
+        if (ans.equalsIgnoreCase(answers[count])) {
             score++;
         }
+        if (count>= questions.length) {
+            chronometer.stop();
+            long time = chronometer.getBase();
+            Intent intent = new Intent(getApplicationContext(), finalactivity.class);
+            intent.putExtra("time", time);
+            intent.putExtra("score", score);
+            startActivity(intent);
+        }
+        scoreText.setText("Score: " + score);
+        count++;
+        question.setText(questions[count]);
     }
 }

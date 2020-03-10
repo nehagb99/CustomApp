@@ -3,19 +3,19 @@
     <string name="hard_coded_string_name">Hello World</string>
     <string name="click_button">Submit</string>
     <string-array name="b99questions">
-        <item>Who won the fourth Halloween Heist? (first name)</item>
-        <item>Who is Captain Holt's archnemesis? (last name)</item>
-        <item>What is the name of Captain Holt's dog?</item>
-        <item>Which criminal are Jake and Holt hiding from in witness protection? (last name)</item>
-        <item>What is Jake's badge number?</item>
-        <item>What is the first name of the actress who plays Gina?</item>
-        <item>How many seasons are set to air as of Feb 2020?</item>
-        <item>What year did the show start?</item>
-        <item>What is the first name of the detective promoted to sergeant in Season 5?</item>
-        <item>What is the first name of the man Rosa almost married?</item>
-        <item>What day (give a number) is Jake and Amy's wedding anniversary?</item>
-        <item>What is the name of the Season 7 premiere?</item>
-        <item>What is the name of the drug Jake and Amy are investigating in The Mattress?</item>
+        <item>"Who won the fourth Halloween Heist? (first name)"</item>
+        <item>"Who is Captain Holt's archnemesis? (last name)"</item>
+        <item>"What is the name of Captain Holt's dog?"</item>
+        <item>"Which criminal are Jake and Holt hiding from in witness protection? (last name)"</item>
+        <item>"What is Jake's badge number?"</item>
+        <item>"What is the first name of the actress who plays Gina?"</item>
+        <item>"How many seasons are set to air as of Feb 2020?"</item>
+        <item>"What year did the show start?"</item>
+        <item>"What is the first name of the detective promoted to sergeant in Season 5?"</item>
+        <item>"What is the first name of the man Rosa almost married?"</item>
+        <item>"What day (give a number) is Jake and Amy's wedding anniversary?"</item>
+        <item>"What is the name of the Season 7 premiere?"</item>
+        <item>"What is the name of the drug Jake and Amy are investigating in The Mattress?"</item>
     </string-array>
     <string-array name="b99answers">
         <item>Gina</item>
@@ -31,5 +31,11 @@
         <item>15</item>
         <item>Manhunter</item>
         <item>Taxi</item>
+    </string-array>
+    <string-array name="b99results">
+        <item>"You don't really know much about Brooklyn 99, but you're excited to learn more. Welcome to the Nine-Nine!"</item>
+        <item>"You're a casual Brooklyn 99 watcher, but you don't remember all the details. Keep watching!"</item>
+        <item>"You're a fan of the show, and love the characters. You just need to brush up on your trivia!"</item>
+        <item>"You're a die hard fan, noice job!"</item>
     </string-array>
 </resources>

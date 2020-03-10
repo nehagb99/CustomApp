@@ -26,6 +26,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.bagalkotneha.customapp.MainActivity"/>
         </activity>
+
+        <activity android:name=".finalactivity"
+            android:parentActivityName=".b99activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bagalkotneha.customapp.b99activity"/>
+        </activity>
     </application>
 
 </manifest>
