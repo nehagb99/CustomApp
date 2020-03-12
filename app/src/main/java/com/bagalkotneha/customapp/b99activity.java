@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.util.Log;
 import android.view.View;
 import android.widget.Chronometer;
@@ -33,6 +34,7 @@ public class b99activity extends AppCompatActivity {
         scoreText = findViewById(R.id.score);
 
         chronometer = (Chronometer) findViewById(R.id.simpleChronometer); // initiate a chronometer
+        chronometer.setBase(SystemClock.elapsedRealtime());
         chronometer.start(); // start a chronometer
 
         Resources res = getResources();
@@ -47,16 +49,18 @@ public class b99activity extends AppCompatActivity {
         if (ans.equalsIgnoreCase(answers[count])) {
             score++;
         }
-        if (count>= questions.length) {
+        if (count < (questions.length-1)) {
+            scoreText.setText("Score: " + score);
+            count++;
+            question.setText(questions[count]);
+        }
+        else {
             chronometer.stop();
-            long time = chronometer.getBase();
+            long time = Long.valueOf(SystemClock.elapsedRealtime() - chronometer.getBase()) / Long.valueOf(1000);
             Intent intent = new Intent(getApplicationContext(), finalactivity.class);
             intent.putExtra("time", time);
             intent.putExtra("score", score);
             startActivity(intent);
         }
-        scoreText.setText("Score: " + score);
-        count++;
-        question.setText(questions[count]);
     }
 }
