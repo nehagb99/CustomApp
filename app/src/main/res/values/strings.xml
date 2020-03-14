@@ -38,4 +38,7 @@
         <item>"You're a fan of the show, and love the characters. You just need to brush up on your trivia!"</item>
         <item>"You're a die hard fan, noice job!"</item>
     </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
